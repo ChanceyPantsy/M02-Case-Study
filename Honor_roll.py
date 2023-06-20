@@ -6,21 +6,18 @@
 # If the last name input is 'ZZZ', the program will terminate.
 #-----------------------------------------------------------
 
-def main():
-    while True:
-        last_name = input("Enter student's last name (or 'ZZZ' to quit): ")
-        if last_name.upper() == 'ZZZ':
-            break
-
-        first_name = input("Enter student's first name: ")
-        gpa = float(input("Enter student's GPA: "))
-
-        if gpa >= 3.5:
-            print(f"{first_name} {last_name} has made the Dean's List!")
-        elif gpa >= 3.25:
-            print(f"{first_name} {last_name} has made the Honor Roll!")
-        else:
-            print(f"{first_name} {last_name} needs to improve GPA to qualify for the Dean's List or Honor Roll.")
-
-if __name__ == "__main__":
-    main()
+print("Welcome to the GPA tester!")
+while True:
+    last_name = input("Please type the student's last name. Type 'ZZZ' if you want to stop. ")
+    if last_name == "ZZZ" or last_name == "zzz":
+        print("Goodbye!")
+        break
+    first_name = input("Now, please type the student's first name. ")
+    gpa_string = input("Lastly, type the student's GPA. ")
+    gpa = float(gpa_string)
+    if gpa >= 3.5:
+        print(first_name + " " + last_name + " has made the Dean's List!")
+    elif gpa >= 3.25:
+        print(first_name + " " + last_name + " has made the Honor Roll!")
+    else:
+        print(first_name + " " + last_name + " has not made the Dean's List or the Honor Roll.")
