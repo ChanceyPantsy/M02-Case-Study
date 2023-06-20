@@ -1,6 +1,6 @@
 #-----------------------------------------------------------
 # Name: Chance Kizer
-# File: student_honor_roll.py
+# File: Honor_roll.py
 # This program will prompt user to input student's first name, last name, and GPA.
 # The program will check the student's GPA and inform if the student is eligible for the Dean's List or the Honor Roll.
 # If the last name input is 'ZZZ', the program will terminate.
